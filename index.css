@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #F9E4D4;
+}
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://i.postimg.cc/YjcJg24M/aa.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+}
+.logo {
+	float: left;
+  width: 200px;
+}
+.logo img {
+	width: 100%;
+	padding: 15px 0;
+}
+.welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.welcome-text h1 span {
+	color: #00fecb;
+}
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+/*resposive*/
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	img {
+		width: ;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}
+
+#logindiv,
+#registerdiv {
+    padding: 30px;
+    background-color: rgb(228, 222, 222);
+    color: black;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    border: 2px solid darkgray;
+    display: block;
+}
+
+
+
+label,
+input,
+textarea {
+    padding: 2px;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btnlogin,
+#btnregister {
+    height: 50px;
+    width: 270px;
+    margin-left: 6px;
+    margin-right: 8px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: rgb(79, 219, 14);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#signup {
+    color: darkblue;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-left: 70px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#signup:hover {
+    color: rgb(39, 57, 88);
+}

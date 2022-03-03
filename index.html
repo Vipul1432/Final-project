@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>E-rent</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS Bundle -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <style media="screen">
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 65px;
+    }
+
+    .product-card {
+      margin: 10px;
+    }
+
+    .card {
+      margin-left: 35px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+
+          <li style="margin-left: 0px;"><a href="#" class="nav-link px-2 text-white"><img src="img/logo.png" alt="" height="30px"></a></li>
+
+
+          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2" onclick="location.href='Pages/login.html';">Login</button>
+          <button type="button" class="btn btn-warning" onclick="location.href='Pages/Register.html';">Sign-up</button>
+          <!-- Button trigger modal -->
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/ab1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="img/abc1.jpg" alt="Chicago" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="img/abcd1.jpg" alt="New York" class="d-block" style="width:100%">
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+
+    <!-- Album bootstrap -->
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Album example</h1>
+          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product details Container -->
+
+
+    <section class="products">
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/img1.jpg">
+        </div>
+        <div class="product-info">
+          <h5>Winter Jacket <button class="btn btn-primary" type="button" onclick="location.href='Pages/productDetail.html';">BUY NOW</button></h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/img2.jpg">
+        </div>
+        <div class="product-info">
+          <h5>Winter Jacket</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/img3.jpg">
+        </div>
+        <div class="product-info">
+          <h5>Winter Jacket</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/img4.jpg">
+        </div>
+        <div class="product-info">
+          <h5>Winter Jacket</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/img5.jpg" width="326" height="500">
+        </div>
+        <div class="product-info">
+          <h5>Winter Jacket</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/img6.jpg" width="326" height="500">
+        </div>
+        <div class="product-info">
+          <h5>Winter Jacket</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/img7.jpg" width="326" height="500">
+        </div>
+        <div class="product-info">
+          <h5>Winter Jacket</h5>
+          <h6>$99.99</h6>
+          <button type="button" class="btn rounded-3 text-white px-4 py-2">
+              <i class="fas fa-shopping-cart pe-1"></i> BUY NOW
+          </button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/img8.jpg" width="326" height="500">
+        </div>
+        <div class="product-info">
+          <h5>Winter Jacket</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/img1.jpg">
+        </div>
+        <div class="product-info">
+          <h5>Winter Jacket</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/img2.jpg">
+        </div>
+        <div class="product-info">
+          <h5>Winter Jacket</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/img3.jpg">
+        </div>
+        <div class="product-info">
+          <h5>Winter Jacket</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/img4.jpg">
+        </div>
+        <div class="product-info">
+          <h5>Winter Jacket</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+
+      <!-- more products -->
+
+    </section>
+
+    <!--   Card Element of bootstrap   -->
+    <section class="card">
+
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">
+          <div class="card" style="width: 18rem;">
+            <img src="img/avatar1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="card" style="width: 18rem;">
+            <img src="img/avatar2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="card" style="width: 18rem;">
+            <img src="img/avatar1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="card" style="width: 18rem;">
+            <img src="img/avatar2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-4 offset-1">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter" />
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram" />
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook" />
+              </svg></a></li>
+        </ul>
+      </div>
+      <p class="float-end"><a href="#">Back to top</a></p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
